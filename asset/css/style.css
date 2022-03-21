@@ -4,60 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* Variabili */
-:root{
-    --bg-main: #7fffd4;
-    --bg-click: #6495ed;
-    --text-bold: 1000;
-    --text-big: 30px;
-}
-/* Utility */
-.cont-80{
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-}
-.d-flex{
-    display: flex;
-}
-.flex-wrap{
-    flex-wrap: wrap;
-}
-.justify-spacebetween{
-    justify-content: space-between;
-}
-.justify-center{
-    justify-content: center;
-}
-.align-center{
-    align-items: center;
-}
-.mr-10{
-    margin-right: 10px;
-}
-.mr-5{
-    margin-right: 5px;
-}
-.py-20{
-    padding: 20px 0;
-}
-.w-100{
-    width: 100%;
-    height: 100%;
-} 
-.w-30{
-    width: 30%;
-    aspect-ratio: 1;
-}
-.width-10{
-    width: calc(100% / 10);
-}
-.width-9{
-    width: calc(100% / 9);
-}
-.width-7{
-    width: calc(100% / 7);
-}
 
 /* Dimensioni delle varie section */
 header{
@@ -83,6 +29,7 @@ button{
     width: 75px;
 }
 
+/* Classe per realizzare i vari box */
 .box{
     aspect-ratio: 1 / 1;
     border: 1px solid black;
@@ -90,9 +37,4 @@ button{
     justify-content: center;
     align-items: center;
 }
-.click{
-    background-color: var(--bg-click);
-}
-.clickBack{
-    background-color: var(--bg-main);
-}
+
