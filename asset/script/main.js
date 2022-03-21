@@ -1,5 +1,8 @@
-// Variabile per il button
+// Variabile per il button play
 let play = document.getElementById("play");
+// Variabile per il button reload
+let reload = document.getElementById("reload");
+
 // Variabile per il select
 let level = document.getElementById("level");
 
@@ -50,10 +53,14 @@ play.addEventListener('click',
 
             // Al click si colora di azzurro
             boxN.addEventListener('click',
-                () =>  boxN.classList.add("click")
+                () =>  boxN.classList.toggle("click")
             );
-        }
 
-        
+        }
+      
     }
-)
+// L'evento al click avviene una sola volta
+,{once : true})
+
+// Evento al click ricarica la pagina
+reload.addEventListener('click', () => location.reload() );
