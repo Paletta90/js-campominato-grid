@@ -84,6 +84,8 @@ button{
 
 .box{
     aspect-ratio: 1 / 1;
-    border: 1px solid white;
-    background-color: red;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

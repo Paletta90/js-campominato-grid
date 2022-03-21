@@ -17,29 +17,41 @@ play.addEventListener('click',
 
         // Variabile che definisce se il sistema a griglie è 10*10 o 9*9 o 7*7 
         let numCelle;
+        // Variabile che definisce quale classe assegnare
+        let width;
 
         // Controllo quale difficoltà è stata scelta 
         if (parseInt(level.value) == 1) {
 
             numCelle = 100;
-            boxN.classList.add("width-10");
+            width = "width-10";
 
         } else if (parseInt(level.value) == 2) {
 
             numCelle = 81;
-            boxN.classList.add("width-9");
+            width = "width-9";
 
         } else {
 
             numCelle = 49;
-            boxN.classList.add("width-7");
+            width = "width-7";
 
         }
 
-        // console.log(boxN);
+        // Mando in stampa tutti i box al click
+        for (let i = 1; i <= numCelle; i++) {
 
-        for(let i = 1; i <= numCelle; i++){
-             grid.appendChild(boxN);
+            // Creo elemento <div>
+            let boxN = document.createElement("div");
+            // Aggiungo classe "box"
+            boxN.classList.add("box");
+            // Aggiungo la classe width rispettiva
+            boxN.classList.add(width);
+            // Numero tutti i box
+            boxN.innerText = `${i}`;
+            // Appendo il nuovo box
+            grid.appendChild(boxN);
+            
         }
     }
 )
