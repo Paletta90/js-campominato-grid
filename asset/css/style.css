@@ -1,5 +1,57 @@
+/* Reset */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+/* Variabili */
+:root{
+    --bg-main: #7fffd4;
+    --text-bold: 1000;
+    --text-big: 30px;
+}
+/* Utility */
+.cont-80{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.justify-spacebetween{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mr-5{
+    margin-right: 5px;
+}
+
+/* Dimensioni delle varie section */
+header{
+    height: 10vh;
+}
+main{
+    height: 80vh;
+    background-color: var(--bg-main);
+}
+footer{
+    height: 10vh;
+}
+
+/* Caratteristiche tag*/
+h2{
+    font-weight: var(--text-bold);
+    font-size: var(--text-big);
+}
+select{
+    width: 200px;
+}
+button{
+    width: 75px;
 }
