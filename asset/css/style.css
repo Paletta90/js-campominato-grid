@@ -7,6 +7,7 @@
 /* Variabili */
 :root{
     --bg-main: #7fffd4;
+    --bg-click: #6495ed;
     --text-bold: 1000;
     --text-big: 30px;
 }
@@ -88,4 +89,10 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.click{
+    background-color: var(--bg-click);
+}
+.clickBack{
+    background-color: var(--bg-main);
 }

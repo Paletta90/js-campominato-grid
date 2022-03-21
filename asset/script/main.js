@@ -11,16 +11,12 @@ play.addEventListener('click',
         // Variabile contenitore della griglia
         let grid = document.getElementById("grid");
 
-        // Variabile dove creo i box
-        let boxN = document.createElement("div");
-        boxN.classList.add("box");
-
         // Variabile che definisce se il sistema a griglie è 10*10 o 9*9 o 7*7 
         let numCelle;
         // Variabile che definisce quale classe assegnare
         let width;
 
-        // Controllo quale difficoltà è stata scelta 
+        // Controllo quale difficoltà è stata scelta e assegno il num di celle e le classi rispettive 
         if (parseInt(level.value) == 1) {
 
             numCelle = 100;
@@ -51,7 +47,13 @@ play.addEventListener('click',
             boxN.innerText = `${i}`;
             // Appendo il nuovo box
             grid.appendChild(boxN);
-            
+
+            // Al click si colora di azzurro
+            boxN.addEventListener('click',
+                () =>  boxN.classList.add("click")
+            );
         }
+
+        
     }
 )
